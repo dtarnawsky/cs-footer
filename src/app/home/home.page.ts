@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
-
+  items: Array<string> = [];
+  constructor() {
+    for (let i = 0; i < 250; i++) {
+      this.items.push(`This is item ${i}`);
+    }
+  }
 }
